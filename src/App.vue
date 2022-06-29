@@ -9,11 +9,12 @@
 <style>
 
 html, body, #app, .view{
-  width: 100%;
-  height: 100%;
+  width: 100%;/*1920px;*/
+  height: 100%;/*1080px;*/
   padding: 0;
   margin: 0;
   background-size: 100%;
+  position: relative;
 }
 
 /* #app {
