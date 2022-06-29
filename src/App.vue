@@ -17,6 +17,11 @@ html, body, #app, .view{
   position: relative;
 }
 
+.view > *{
+  outline: 1px solid blue;
+  position: absolute;
+}
+
 /* #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
