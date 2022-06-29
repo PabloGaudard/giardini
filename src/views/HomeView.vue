@@ -1,11 +1,7 @@
 <template>
   <div class="home">
-      <router-link class="pavimento-1" to="/about"></router-link>
-      <router-link class="pavimento-2" to="/about"></router-link>
-      <router-link class="pavimento-3" to="/about"></router-link>
-      <router-link class="pavimento-4" to="/about"></router-link>
-      <router-link class="pavimento-5" to="/about"></router-link>
-      <router-link class="pavimento-6" to="/about"></router-link>
+
+      <router-link v-for="i in 6" v-bind:key="i" to="/pavimento/{{i}}" v-bind:class="'pavimento-'+i">{{i}}</router-link>
 
       <router-link class="pavimento-rooftop" to="/about"></router-link>
       <router-link class="pavimento-terreo" to="/about"></router-link>
@@ -46,13 +42,13 @@ export default {
     height: 16.5%;
   }
   &-3{
-    left: 29%;
+    left: 4.5%;
     top: 46.5%;
     width: 21%;
     height: 16%;
   }
   &-4{
-    left: 4.5%;
+    left: 29%;
     top: 46.5%;
     width: 21%;
     height: 16.5%;
