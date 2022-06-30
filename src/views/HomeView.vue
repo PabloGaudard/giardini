@@ -1,16 +1,18 @@
 <template>
   <div class="home">
 
-      <router-link v-for="i in 6" v-bind:key="i" to="/pavimento/{{i}}" v-bind:class="'pavimento-'+i">{{i}}</router-link>
+      <router-link v-for="i in 6" v-bind:key="i" :to="'/pavimento/'+i" v-bind:class="'pavimento-'+i"></router-link>
 
-      <router-link class="pavimento-rooftop" to="/about"></router-link>
-      <router-link class="pavimento-terreo" to="/about"></router-link>
+      <router-link class="pavimento-rooftop" to="/rooftop"></router-link>
+      <router-link class="pavimento-terreo" to="/terreo"></router-link>
       <router-link class="pavimento-terreo-2" to="/about"></router-link>
 
-      <router-link class="xtay" to="/about"></router-link>
+      <router-link class="xtay" to="/xtay"></router-link>
       <router-link class="folder" to="/about"></router-link>
       <router-link class="video" to="/video"></router-link>
-
+      
+      <router-link class="galeria-btn" to="/galeria"></router-link>
+      
   </div>
 </template>
 
@@ -26,6 +28,13 @@ export default {
 <style lang="scss">
 .home {
   background-image: url(../assets/01LAJES.png);
+}
+
+.galeria-btn{
+  right: 9%;
+  bottom: 18%;
+  width: 5%;
+  height: 3%;
 }
 
 .pavimento{

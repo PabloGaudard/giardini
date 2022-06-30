@@ -6,20 +6,30 @@
   </router-view>
 </template>
 
-<style>
-
-html, body, #app, .view{
-  width: 100%;/*1920px;*/
-  height: 100%;/*1080px;*/
-  padding: 0;
-  margin: 0;
-  background-size: 100%;
+<style lang="scss">
+html{
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
   position: relative;
+}
+
+.view{
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
   overflow: hidden;
 }
 
+body, html{
+  margin: 0;  
+}
+
 .view > *{
-  outline: 4px solid blue;
+//  outline: 4px solid blue;
   position: absolute;
 }
 
