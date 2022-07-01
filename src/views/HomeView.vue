@@ -7,8 +7,8 @@
       <router-link class="pavimento-terreo" to="/terreo"></router-link>
       <router-link class="pavimento-terreo-2" to="/terreo"></router-link>
 
-      <router-link class="xtay" to="/xtay"></router-link>
-      <router-link class="folder" to="/folder"></router-link>
+      <router-link class="xtay" to="/pdf/xtay"></router-link>
+      <router-link class="folder" to="/pdf/folder"></router-link>
       <router-link class="video" to="/video"></router-link>
       
       <router-link class="galeria-btn" to="/galeria"></router-link>

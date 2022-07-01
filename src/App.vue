@@ -45,4 +45,14 @@ body, html{
   opacity: 0;
 }
 
+.btn-voltar{
+  right: 6.8%;
+  bottom: 4.4%;
+  width: 4.6%;
+  height: 3.5%;
+  background-image: url(./assets/sair-btn.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 </style>

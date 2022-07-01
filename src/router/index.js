@@ -17,9 +17,9 @@ const routes = [
     component: () => import('../views/PavimentoView.vue')
   },
   {
-    path: '/xtay',
-    name: 'xtay',
-    component: () => import('../views/XtayView.vue')
+    path: '/pdf/:id',
+    name: 'pdf',
+    component: () => import('../views/PdfView.vue')
   },
   {
     path: '/terreo',
@@ -40,11 +40,6 @@ const routes = [
     path: '/dwgs',
     name: 'dwgs',
     component: () => import('../views/DwgsView.vue')
-  },
-  {
-    path: '/folder',
-    name: 'folder',
-    component: () => import('../views/FolderView.vue')
   }
 ]
 

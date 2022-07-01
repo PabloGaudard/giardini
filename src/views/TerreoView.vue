@@ -16,13 +16,6 @@ export default {
 
 <style lang="scss">
 #terreo {
-  .btn-voltar{
-    right: 7%;
-    bottom: 5%;
-    width: 4.5%;
-    height: 3%;
-  }
-
   img{
     width: 60%;
     top: 20%;

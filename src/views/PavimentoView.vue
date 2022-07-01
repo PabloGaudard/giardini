@@ -16,13 +16,6 @@ export default {
 #pavimento {
   background-image: url(../assets/pavimento.png);
 
-  .btn-voltar{
-    right: 7%;
-    bottom: 5%;
-    width: 4.5%;
-    height: 3%;
-  }
-
   img{
     width: 92%;
     top: 25%;

@@ -17,13 +17,6 @@ export default {
 #dwgs {
   background-image: url(../assets/dwgs.png);
   background-size: contain;
-  
 
-  .btn-voltar{
-    right: 7%;
-    bottom: 5%;
-    width: 4.5%;
-    height: 3%;
-  }
 }
 </style>

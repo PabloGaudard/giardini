@@ -17,13 +17,5 @@ export default {
 #galeria {
   background-image: url(../assets/galeria.png);
   background-size: contain;
-  
-
-  .btn-voltar{
-    right: 7%;
-    bottom: 5%;
-    width: 4.5%;
-    height: 3%;
-  }
 }
 </style>
