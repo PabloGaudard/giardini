@@ -54,5 +54,6 @@ body, html{
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
+  z-index: 2;
 }
 </style>

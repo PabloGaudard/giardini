@@ -8,12 +8,20 @@
 
       <router-link class="btn-voltar" to="/"></router-link>
 
+      <vertical-menu></vertical-menu>
+
   </div>
 </template>
 
 <script>
+import VerticalMenu from '../components/Menu.vue'
+
 export default {
   name: 'PdfView',
+  components: {
+    VerticalMenu
+  }
+
 }
 </script>
 

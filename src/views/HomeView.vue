@@ -7,21 +7,17 @@
       <router-link class="pavimento-terreo" to="/terreo"></router-link>
       <router-link class="pavimento-terreo-2" to="/terreo"></router-link>
 
-      <router-link class="xtay" to="/pdf/xtay"></router-link>
-      <router-link class="folder" to="/pdf/folder"></router-link>
-      <router-link class="video" to="/video"></router-link>
-      
-      <router-link class="galeria-btn" to="/galeria"></router-link>
-      <router-link class="dwgs-btn" to="/dwgs"></router-link>
-      
+      <vertical-menu></vertical-menu>
   </div>
 </template>
 
 <script>
+import VerticalMenu from '../components/Menu.vue'
+
 export default {
   name: 'HomeView',
   components: {
-    // HelloWorld
+    VerticalMenu
   }
 }
 </script>
@@ -29,20 +25,6 @@ export default {
 <style lang="scss">
 #home {
   background-image: url(../assets/01LAJES.png);
-}
-
-.galeria-btn{
-  right: 9%;
-  bottom: 18%;
-  width: 5%;
-  height: 3%;
-}
-
-.dwgs-btn{
-  right: 3%;
-  bottom: 18%;
-  width: 4.5%;
-  height: 3%;
 }
 
 .pavimento{
@@ -102,24 +84,4 @@ export default {
   }
 }
 
-.xtay{
-  right: 3%;
-  top: 26.5%;
-  width: 11%;
-  height: 11%;
-}
-
-.folder{
-  right: 3%;
-  top: 44%;
-  width: 11%;
-  height: 11%;
-}
-
-.video{
-  right: 3%;
-  top: 62%;
-  width: 11%;
-  height: 11%;
-}
 </style>
