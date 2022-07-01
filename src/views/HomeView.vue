@@ -12,6 +12,7 @@
       <router-link class="video" to="/video"></router-link>
       
       <router-link class="galeria-btn" to="/galeria"></router-link>
+      <router-link class="dwgs-btn" to="/dwgs"></router-link>
       
   </div>
 </template>
@@ -34,6 +35,13 @@ export default {
   right: 9%;
   bottom: 18%;
   width: 5%;
+  height: 3%;
+}
+
+.dwgs-btn{
+  right: 3%;
+  bottom: 18%;
+  width: 4.5%;
   height: 3%;
 }
 

@@ -35,6 +35,11 @@ const routes = [
     path: '/galeria',
     name: 'galeria',
     component: () => import('../views/GaleriaView.vue')
+  },
+  {
+    path: '/dwgs',
+    name: 'dwgs',
+    component: () => import('../views/DwgsView.vue')
   }
 ]
 
