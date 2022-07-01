@@ -1,14 +1,14 @@
 <template>
-  <div class="home">
+  <div id="home">
 
       <router-link v-for="i in 6" v-bind:key="i" :to="'/pavimento/'+i" v-bind:class="'pavimento-'+i"></router-link>
 
       <router-link class="pavimento-rooftop" to="/rooftop"></router-link>
       <router-link class="pavimento-terreo" to="/terreo"></router-link>
-      <router-link class="pavimento-terreo-2" to="/about"></router-link>
+      <router-link class="pavimento-terreo-2" to="/terreo"></router-link>
 
       <router-link class="xtay" to="/xtay"></router-link>
-      <router-link class="folder" to="/about"></router-link>
+      <router-link class="folder" to="/folder"></router-link>
       <router-link class="video" to="/video"></router-link>
       
       <router-link class="galeria-btn" to="/galeria"></router-link>
@@ -27,7 +27,7 @@ export default {
 </script>
 
 <style lang="scss">
-.home {
+#home {
   background-image: url(../assets/01LAJES.png);
 }
 

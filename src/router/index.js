@@ -40,6 +40,11 @@ const routes = [
     path: '/dwgs',
     name: 'dwgs',
     component: () => import('../views/DwgsView.vue')
+  },
+  {
+    path: '/folder',
+    name: 'folder',
+    component: () => import('../views/FolderView.vue')
   }
 ]
 

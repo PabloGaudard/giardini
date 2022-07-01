@@ -1,5 +1,6 @@
 <template>
   <div id="pavimento">
+    <h1>{{$route.params.id}}º</h1>
     <img :src="require(`@/assets/pavimento-${$route.params.id}.png`)" alt="">
     <router-link class="btn-voltar" to="/"></router-link>
   </div>
@@ -13,7 +14,7 @@ export default {
 
 <style lang="scss">
 #pavimento {
-//  background-image: url(../assets/pavimento-{{2}}.png);
+  background-image: url(../assets/pavimento.png);
 
   .btn-voltar{
     right: 7%;
@@ -23,7 +24,19 @@ export default {
   }
 
   img{
-    width: 100%;
+    width: 92%;
+    top: 25%;
+    right: 4%;
+  }
+
+  h1{
+    position: absolute;
+    top: 15.6%;
+    right: 26%;
+    font-size: 2.1rem;
+    color: #3d8217;
+    font-weight: bolder;
+    font-family: monospace;
   }
 }
 </style>

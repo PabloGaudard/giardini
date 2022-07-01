@@ -1,5 +1,5 @@
 <template>
-  <div id="rooftop">
+  <div id="dwgs">
     <router-link class="btn-voltar" to="/"></router-link>
   </div>
 </template>
@@ -14,7 +14,7 @@ export default {
 </script>
 
 <style lang="scss">
-#rooftop {
+#dwgs {
   background-image: url(../assets/dwgs.png);
   background-size: contain;
   

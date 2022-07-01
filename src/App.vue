@@ -12,6 +12,8 @@ html{
   padding-bottom: 56.25%;
   height: 0;
   position: relative;
+  background-image: url(./assets/default.png);
+  background-size: contain;
 }
 
 .view{
@@ -29,7 +31,7 @@ body, html{
 }
 
 .view > *{
-  outline: 4px solid blue;
+ // outline: 4px solid blue;
   position: absolute;
 }
 
