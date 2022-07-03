@@ -2,9 +2,12 @@
   <div id="galeria">
 
     <div class="tabs">
-      <router-link to="/galeria/fachadas">Fachadas</router-link>
-      <router-link to="/galeria/internas">Internas</router-link>
-      <router-link to="/galeria/areas_comuns">Áreas Comuns</router-link>
+      <router-link v-bind:class="{ active: $route.params.path == 'fachadas' }" to="/galeria/fachadas">Fachadas
+      </router-link>
+      <router-link v-bind:class="{ active: $route.params.path == 'internas' }" to="/galeria/internas">Internas
+      </router-link>
+      <router-link v-bind:class="{ active: $route.params.path == 'areas_comuns' }" to="/galeria/areas_comuns">Áreas Comuns
+      </router-link>
     </div>
 
     <div class="slider-container">
@@ -73,7 +76,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 #galeria {
   background-image: url(../assets/galeria.png);
   background-size: contain;
@@ -92,16 +95,26 @@ export default {
     }
   }
 
-  .tabs{
+  .tabs {
     top: 11%;
     left: 27.8%;
     text-transform: uppercase;
-    a{
+
+    a {
       padding-right: 20px;
       text-decoration: none;
       font-size: 1.35rem;
       color: inherit;
+      &.active {
+        font-weight: bolder;
+      }
     }
   }
+
 }
+  .swiper-button-next,
+  .swiper-button-prev
+  {
+    color: #aaa;
+  }
 </style>

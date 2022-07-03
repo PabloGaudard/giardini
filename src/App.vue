@@ -15,6 +15,7 @@ html{
   background-image: url(./assets/default.png);
   background-size: contain;
   color: #3d8217;
+  font-family: sans-serif;
 }
 
 .view{
