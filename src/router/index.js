@@ -37,7 +37,7 @@ const routes = [
     component: () => import('../views/GaleriaView.vue')
   },
   {
-    path: '/dwgs',
+    path: '/dwgs/:file',
     name: 'dwgs',
     component: () => import('../views/DwgsView.vue')
   }

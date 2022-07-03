@@ -2,7 +2,9 @@
   <div id="dwgs">
     <router-link class="btn-voltar" to="/"></router-link>
 
-
+      <iframe v-if="$route.params.file"
+      src="./dwgs/ATICO COTADO.pdf"
+      width="100%" height="100%" style="border:none"></iframe> 
 
     <router-link
     v-for="i in 10" v-bind:key="i"
