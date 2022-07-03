@@ -33,7 +33,7 @@ body, html{
 }
 
 .view > *{
-  outline: 4px solid blue;
+  //outline: 4px solid blue;
   position: absolute;
 }
 
