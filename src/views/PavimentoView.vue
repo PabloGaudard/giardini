@@ -27,7 +27,6 @@ export default {
     top: 15.6%;
     right: 26%;
     font-size: 2.1rem;
-    color: #3d8217;
     font-weight: bolder;
     font-family: monospace;
   }

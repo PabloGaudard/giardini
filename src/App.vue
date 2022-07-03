@@ -14,6 +14,7 @@ html{
   position: relative;
   background-image: url(./assets/default.png);
   background-size: contain;
+  color: #3d8217;
 }
 
 .view{

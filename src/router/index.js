@@ -32,7 +32,7 @@ const routes = [
     component: () => import('../views/RooftopView.vue')
   },
   {
-    path: '/galeria',
+    path: '/galeria/:path',
     name: 'galeria',
     component: () => import('../views/GaleriaView.vue')
   },
