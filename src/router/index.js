@@ -43,7 +43,7 @@ const routes = [
   },
   {
     path: '/apartamento/:numero',
-    name: 'dwgs',
+    name: 'apartamento',
     component: () => import('../views/ApartamentoView.vue')
   }
 ]
