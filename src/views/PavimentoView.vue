@@ -99,7 +99,6 @@ export default {
     right: 10%;
     font-size: 2.1rem;
     font-weight: bolder;
-    font-family: monospace;
   }
 }
 </style>

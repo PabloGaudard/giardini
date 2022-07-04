@@ -6,7 +6,8 @@
       </router-link>
       <router-link v-bind:class="{ active: $route.params.path == 'internas' }" to="/galeria/internas">Internas
       </router-link>
-      <router-link v-bind:class="{ active: $route.params.path == 'areas_comuns' }" to="/galeria/areas_comuns">Áreas Comuns
+      <router-link v-bind:class="{ active: $route.params.path == 'areas_comuns' }" to="/galeria/areas_comuns">Áreas
+        Comuns
       </router-link>
     </div>
 
@@ -96,6 +97,7 @@ export default {
       text-decoration: none;
       font-size: 1.35rem;
       color: inherit;
+
       &.active {
         font-weight: bolder;
       }
@@ -103,9 +105,13 @@ export default {
   }
 
 }
-  .swiper-button-next,
-  .swiper-button-prev
-  {
-    color: #aaa;
-  }
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #aaa;
+}
+
+.swiper-button-disabled {
+  display: none;
+}
 </style>
