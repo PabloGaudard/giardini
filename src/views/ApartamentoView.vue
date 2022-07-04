@@ -1,9 +1,11 @@
 <template>
     <div id="apartamento">
+        <h1>{{pavimento}}º PAVIMENTO</h1>
+        <h2>AP {{apartamento}}</h2>
+
 
         <img :src="require(`@/assets/apartamentos/${source}.png`)" alt="">
-
-        <router-link class="btn-voltar" to="/"></router-link>
+        <router-link class="btn-voltar" :to="'/pavimento/'+pavimento"></router-link>
     </div>
 </template>
 
@@ -12,8 +14,14 @@
 export default {
     name: 'PdfView',
     computed: {
+        apartamento() {
+            return this.$route.params.numero;
+        },
+        pavimento() {
+            return this.$route.params.numero.charAt(0);
+        },
         source() {
-            return ((this.$route.params.numero.charAt(0) in ['1', '2', '4', '6']) ? 'a/' : 'b/') + (this.$route.params.numero.substring(1) - 0)
+            return ((this.pavimento in ['1', '2', '4', '6']) ? 'a/' : 'b/') + (this.apartamento.substring(1) - 0)
         }
     },
 }
@@ -21,15 +29,24 @@ export default {
 
 <style lang="scss" scoped>
 #apartamento {
-    //background-image: url(../assets/01LAJES.png);
 
     img {
-        width: 70%;
-        height: 60%;
-        //border: 2px solid red;
-        left: 15%;
-        top: 25%;
+        width: 40%;
+        height: 70%;
+        left: 30%;
+        top: 15%;
         object-fit: contain;
+    }
+
+    h1{
+        top: 12%;
+        right: 7%;
+        font-size: 2.2rem;
+    }
+
+    h2{
+        right: 7%;
+        top: 19%;
     }
 }
 </style>
