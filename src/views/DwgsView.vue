@@ -2,7 +2,7 @@
   <div id="dwgs">
     <router-link class="btn-voltar" :to="$route.params.file?'/dwgs':'/'"></router-link>
 
-    <iframe v-if="$route.params.file" :src="`../dwgs/${$route.params.file}.pdf`" width="100%" height="100%"
+    <iframe v-if="$route.params.file" :src="`../assets/dwgs/${$route.params.file}.pdf`" width="100%" height="100%"
       style="border:none; z-index: 1;"></iframe>
 
     <router-link v-for="i in 10" v-bind:key="i" style="width: 11.2%; height: 16%;"
