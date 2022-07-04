@@ -1,7 +1,8 @@
 <template>
   <div id="terreo">
-    <router-link class="btn-voltar" to="/"></router-link>
+    <h1>TÉRREO</h1>
     <img :src="require(`@/assets/terreo.png`)" alt="">
+    <router-link class="btn-voltar" to="/"></router-link>
   </div>
 </template>
 
@@ -16,7 +17,14 @@ export default {
 
 <style lang="scss">
 #terreo {
-  img{
+
+  h1 {
+    right: 4.5%;
+    top: 14.5%;
+    font-size: 2.3rem;
+  }
+
+  img {
     width: 60%;
     top: 20%;
     right: 20%;

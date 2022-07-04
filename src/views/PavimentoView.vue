@@ -1,6 +1,6 @@
 <template>
   <div id="pavimento">
-    <h1>{{ $route.params.id }}º</h1>
+    <h1>{{ $route.params.id }}º PAVIMENTO</h1>
 
     <img :src="require(`@/assets/pavimento-${$route.params.id}.png`)" alt="">
 
@@ -96,7 +96,7 @@ export default {
   h1 {
     position: absolute;
     top: 15.6%;
-    right: 26%;
+    right: 10%;
     font-size: 2.1rem;
     font-weight: bolder;
     font-family: monospace;

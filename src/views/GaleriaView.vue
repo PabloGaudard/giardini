@@ -14,8 +14,7 @@
 
       <!-- :pagination="{ clickable: true }"
       :scrollbar="{ draggable: true }"  -->
-      <swiper style="height: 100%;" :modules="modules" :slides-per-view="1" :space-between="50" navigation
-        @swiper="onSwiper" @slideChange="onSlideChange">
+      <swiper style="height: 100%;" :modules="modules" :slides-per-view="1" :space-between="50" navigation>
         <template v-if="$route.params.path == 'fachadas'">
           <swiper-slide v-for="i in 4" v-bind:key="i">
             <img :src="require(`@/assets/galeria/fachadas/${i}.jpg`)" alt="">
@@ -60,15 +59,7 @@ export default {
     // HelloWorld
   },
   setup() {
-    const onSwiper = (swiper) => {
-      console.log(swiper);
-    };
-    const onSlideChange = () => {
-      console.log('slide change');
-    };
     return {
-      onSwiper,
-      onSlideChange,
       modules: [Navigation, Pagination, Scrollbar, A11y],
     };
   },
