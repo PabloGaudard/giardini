@@ -76,7 +76,7 @@ export default {
   .slider-container {
     //outline: 1px solid red;
     width: 50%;
-    top: 15%;
+    top: 17%;
     left: 25%;
     height: 70%;
 
