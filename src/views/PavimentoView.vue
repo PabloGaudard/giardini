@@ -1,6 +1,6 @@
 <template>
   <div id="pavimento">
-    <h1>{{ $route.params.id }}º{{pavimento}}</h1>
+    <h1>{{ $route.params.id }}º</h1>
 
     <img :src="require(`@/assets/pavimento-${$route.params.id}.png`)" alt="">
 
