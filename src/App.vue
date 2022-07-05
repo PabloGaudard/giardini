@@ -7,7 +7,7 @@
 </template>
 
 <style lang="scss">
-@import url('http://fonts.cdnfonts.com/css/myriad-pro');
+@import url('https://fonts.cdnfonts.com/css/myriad-pro');
 
 html {
   width: 100%;
