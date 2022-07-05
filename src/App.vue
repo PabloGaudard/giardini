@@ -7,7 +7,9 @@
 </template>
 
 <style lang="scss">
-html{
+@import url('http://fonts.cdnfonts.com/css/myriad-pro');
+
+html {
   width: 100%;
   padding-bottom: 56.25%;
   height: 0;
@@ -15,10 +17,10 @@ html{
   background-image: url(./assets/default.png);
   background-size: contain;
   color: #3d8217;
-  font-family: sans-serif;
+  font-family: 'Myriad Pro', sans-serif;                                              
 }
 
-.view{
+.view {
   width: 100%;
   height: 100%;
   background-size: 100%;
@@ -28,11 +30,12 @@ html{
   overflow: hidden;
 }
 
-body, html{
-  margin: 0;  
+body,
+html {
+  margin: 0;
 }
 
-.view > *{
+.view>* {
   //outline: 4px solid blue;
   position: absolute;
 }
@@ -47,7 +50,7 @@ body, html{
   opacity: 0;
 }
 
-.btn-voltar{
+.btn-voltar {
   right: 6.8%;
   bottom: 4.4%;
   width: 4.6%;

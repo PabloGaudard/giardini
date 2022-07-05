@@ -88,14 +88,14 @@ export default {
   }
 
   .tabs {
-    top: 11%;
+    top: 13%;
     left: 27.8%;
     text-transform: uppercase;
 
     a {
       padding-right: 20px;
       text-decoration: none;
-      font-size: 1.35rem;
+      font-size: 1.5rem;
       color: inherit;
 
       &.active {
