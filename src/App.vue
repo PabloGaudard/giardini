@@ -17,7 +17,8 @@ html {
   background-image: url(./assets/default.png);
   background-size: contain;
   color: #3d8217;
-  font-family: 'Myriad Pro', sans-serif;                                              
+  font-family: 'Myriad Pro', sans-serif;
+  background-repeat: no-repeat;
 }
 
 .view {

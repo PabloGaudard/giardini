@@ -149,11 +149,13 @@ export default {
         h2{
             margin-bottom: 0;
             font-size: 2.3rem;
+            white-space: nowrap;
         }
         p{
             font-size: 1.6rem;
             margin-top: 0;
             font-weight: 300;
+            white-space: nowrap;
         }
 
     }
