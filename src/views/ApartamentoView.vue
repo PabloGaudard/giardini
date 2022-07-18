@@ -97,6 +97,43 @@ export default {
                     34.64,
                     35.17,
                     58.18
+                ],
+                c:[
+                    94.34,
+                    43.59,
+                    42.55,
+                    42.38,
+                    42.21,
+                    42.04,
+                    41.90,
+                    41.87,
+                    41.93,
+                    43.55,
+                    43.66,
+                    38.17,
+                    38.24,
+                    38.31,
+                    38.46,
+                    39.24,
+                    64.38,
+                    38.22,
+                    60.80,
+                    37.99,
+                    38.13,
+                    36.37,
+                    35.01,
+                    31.30,
+                    83.66,
+                    41.90,
+                    47.09,
+                    36.99,
+                    42.73,
+                    42.28,
+                    42.28,
+                    42.28,
+                    42.74,
+                    41.60,
+                    67.02
                 ]
             }
         }
@@ -116,7 +153,7 @@ export default {
             return this.apartamento.substring(1) - 0;
         },
         tipoPavimento() {
-            return this.pavimento in ['1', '2', '4', '6'] ? 'a' : 'b';
+            return this.pavimento == 1 ? 'c' : (this.pavimento in ['1', '2', '4', '6'] ? 'a' : 'b');
         },
     },
 }
@@ -135,7 +172,7 @@ export default {
             margin: auto;
             height: 100%;
             display: flex;
-
+            justify-content: center;
             >div {
                 align-self: flex-end;
                 margin-left: 30px;
@@ -144,14 +181,17 @@ export default {
 
         img {
             height: 100%;
+            max-width: 60%;
+            object-fit: contain;
         }
 
-        h2{
+        h2 {
             margin-bottom: 0;
             font-size: 2.3rem;
             white-space: nowrap;
         }
-        p{
+
+        p {
             font-size: 1.6rem;
             margin-top: 0;
             font-weight: 300;

@@ -22,7 +22,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 #home {
   background-image: url(../assets/01LAJES.png);
 }

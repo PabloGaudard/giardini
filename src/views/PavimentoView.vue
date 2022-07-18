@@ -79,12 +79,12 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 #pavimento {
   background-image: url(../assets/pavimento.png);
 
   a {
-    outline: 1px solid red;
+    //outline: 1px solid red;
   }
 
   img {
