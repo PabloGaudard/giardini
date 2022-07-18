@@ -2,9 +2,9 @@
   <div id="pavimento">
     <h1>{{ $route.params.id }}º PAVIMENTO</h1>
 
-    <img :src="require(`@/assets/pavimento-${$route.params.id}.png`)" alt="">
+    <img v-bind:class="'pavimento-'+$route.params.id" :src="require(`@/assets/pavimento-${$route.params.id}.png`)" alt="">
 
-    <template v-if="[1,2,4,6].indexOf($route.params.id-0) > -1">
+    <template v-if="[2,4,6].indexOf($route.params.id-0) > -1">
       <router-link style="left: 11%; top: 36%; width: 6.5%; height: 21.6%;" :to="'/apartamento/' + (pavimento + 1)"></router-link>
 
       <router-link v-for="i in 9" v-bind:key="i" style="width: 4%; height: 18%;"
@@ -84,13 +84,18 @@ export default {
   background-image: url(../assets/pavimento.png);
 
   a {
-    //outline: 1px solid red;
+    outline: 1px solid red;
   }
 
   img {
     width: 92%;
     top: 25%;
     right: 4%;
+    &.pavimento-1{
+      width: 90.5%;
+      top: 10.5%;
+      right: 3.5%;
+    }
   }
 
   h1 {
